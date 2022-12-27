@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <Navbar></Navbar>
       <Banner></Banner>
       {posts.map((post) => (
-        <div className="card mt-10 bg-base-100 shadow-xl">
+        <div className="card mt-10 my-10 mx-10 bg-base-100 shadow-xl">
           <div className="card-body items-center text-center">
             <h2 className="card-title">Shoes!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -31,7 +31,7 @@ export default function Home({ posts }) {
         </div>
       ))}
       <Link href={`/posts`} className="flex justify-center items-center">
-        <button className="btn btn-primary">See All</button>
+        <button className="btn btn-primary mb-10">See All</button>
       </Link>
       <Footer></Footer>
     </>
